@@ -1216,16 +1216,16 @@ section {
           <div class="mockup-main">
             <div class="mockup-stats">
               <div class="mockup-stat">
+                <div class="mockup-stat-label">Total Applied</div>
+                <div class="mockup-stat-value green">142</div>
+              </div>
+              <div class="mockup-stat">
                 <div class="mockup-stat-label">Applied Today</div>
-                <div class="mockup-stat-value blue">47</div>
+                <div class="mockup-stat-value blue">25</div>
               </div>
               <div class="mockup-stat">
-                <div class="mockup-stat-label">Responses</div>
-                <div class="mockup-stat-value green">12</div>
-              </div>
-              <div class="mockup-stat">
-                <div class="mockup-stat-label">In Queue</div>
-                <div class="mockup-stat-value cyan">83</div>
+                <div class="mockup-stat-label">Needs Review</div>
+                <div class="mockup-stat-value cyan">12</div>
               </div>
             </div>
             <div class="mockup-table">
@@ -1236,22 +1236,22 @@ section {
                 <div>Status</div>
               </div>
               <div class="mockup-table-row">
-                <div style="color:var(--text)">Stripe</div>
+                <div style="color:var(--text)">TechCorp Solutions</div>
                 <div style="color:var(--text-muted)">QA Engineer</div>
                 <div style="color:var(--text-muted)">Remote</div>
                 <div><span class="mockup-status applied"><span class="mockup-status-dot"></span>Applied</span></div>
               </div>
               <div class="mockup-table-row">
-                <div style="color:var(--text)">Datadog</div>
+                <div style="color:var(--text)">CloudFirst Inc.</div>
                 <div style="color:var(--text-muted)">SDET</div>
                 <div style="color:var(--text-muted)">New York</div>
                 <div><span class="mockup-status applied"><span class="mockup-status-dot"></span>Applied</span></div>
               </div>
               <div class="mockup-table-row">
-                <div style="color:var(--text)">Figma</div>
+                <div style="color:var(--text)">NovaTech Group</div>
                 <div style="color:var(--text-muted)">Frontend Dev</div>
                 <div style="color:var(--text-muted)">San Francisco</div>
-                <div><span class="mockup-status pending"><span class="mockup-status-dot"></span>Pending</span></div>
+                <div><span class="mockup-status skipped"><span class="mockup-status-dot"></span>Review</span></div>
               </div>
             </div>
           </div>
@@ -1395,9 +1395,10 @@ section {
           <div class="dashboard-topbar-left">
             <div class="dashboard-logo-text">AutoApply</div>
             <div class="dashboard-topbar-tabs">
-              <div class="dashboard-tab active">Overview</div>
-              <div class="dashboard-tab">Applications</div>
-              <div class="dashboard-tab">Analytics</div>
+              <div class="dashboard-tab active">Dashboard</div>
+              <div class="dashboard-tab">Applied Jobs</div>
+              <div class="dashboard-tab">Automation</div>
+              <div class="dashboard-tab">Logs</div>
             </div>
           </div>
           <div class="dashboard-topbar-right">
@@ -1408,32 +1409,36 @@ section {
           </div>
         </div>
 
-        <div class="dashboard-content">
+        <div class="dashboard-content" style="grid-template-columns:repeat(6,1fr);">
+          <div class="dash-stat-card">
+            <div class="label">Total Applied</div>
+            <div class="value" style="color:#22c55e">142</div>
+          </div>
+          <div class="dash-stat-card">
+            <div class="label">Applied Today</div>
+            <div class="value" style="color:var(--accent-blue)">25</div>
+          </div>
           <div class="dash-stat-card">
             <div class="label">This Week</div>
-            <div class="value" style="color:var(--accent-blue)">284</div>
-            <div class="sub">Applications sent</div>
+            <div class="value" style="color:#a855f7">87</div>
           </div>
           <div class="dash-stat-card">
-            <div class="label">Response Rate</div>
-            <div class="value" style="color:#22c55e">8.4%</div>
-            <div class="sub">+2.1% vs last week</div>
+            <div class="label">Needs Review</div>
+            <div class="value" style="color:var(--accent-amber)">12</div>
           </div>
           <div class="dash-stat-card">
-            <div class="label">Interviews</div>
-            <div class="value" style="color:var(--accent-cyan)">7</div>
-            <div class="sub">Scheduled this week</div>
+            <div class="label">Skipped</div>
+            <div class="value" style="color:#eab308">3</div>
           </div>
           <div class="dash-stat-card">
-            <div class="label">Saved Hours</div>
-            <div class="value" style="color:var(--accent-amber)">14.2</div>
-            <div class="sub">vs manual applying</div>
+            <div class="label">Errors</div>
+            <div class="value" style="color:#ef4444">1</div>
           </div>
         </div>
 
         <div class="dashboard-chart-area">
           <div class="dash-chart">
-            <div class="chart-title">Applications Per Day</div>
+            <div class="chart-title">Applications Over Time</div>
             <div class="chart-bars">
               <div class="chart-bar" style="height:45%"></div>
               <div class="chart-bar" style="height:72%"></div>
@@ -1452,31 +1457,26 @@ section {
             </div>
           </div>
           <div class="dash-chart dash-activity">
-            <div class="chart-title">Recent Activity</div>
+            <div class="chart-title">Top Companies</div>
             <div class="activity-item">
-              <div class="activity-dot green"></div>
-              <span class="activity-text">Applied to Stripe — QA Engineer</span>
-              <span class="activity-time">2m ago</span>
+              <span class="activity-text">TechCorp Solutions</span>
+              <span class="activity-time">4</span>
             </div>
             <div class="activity-item">
-              <div class="activity-dot green"></div>
-              <span class="activity-text">Applied to Vercel — Frontend Dev</span>
-              <span class="activity-time">4m ago</span>
+              <span class="activity-text">CloudFirst Inc.</span>
+              <span class="activity-time">3</span>
             </div>
             <div class="activity-item">
-              <div class="activity-dot yellow"></div>
-              <span class="activity-text">Skipped Palantir — external link</span>
-              <span class="activity-time">5m ago</span>
+              <span class="activity-text">DataBridge Systems</span>
+              <span class="activity-time">2</span>
             </div>
             <div class="activity-item">
-              <div class="activity-dot green"></div>
-              <span class="activity-text">Applied to Notion — SDET</span>
-              <span class="activity-time">7m ago</span>
+              <span class="activity-text">Apex Consulting</span>
+              <span class="activity-time">2</span>
             </div>
             <div class="activity-item">
-              <div class="activity-dot blue"></div>
-              <span class="activity-text">Rate limit — pausing 45s</span>
-              <span class="activity-time">8m ago</span>
+              <span class="activity-text">NovaTech Group</span>
+              <span class="activity-time">1</span>
             </div>
           </div>
         </div>
